@@ -66,6 +66,7 @@ public class MainView extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
+        nav.addItem(new SideNavItem("Consumo", "consumo", VaadinIcon.DASHBOARD.create()));
         nav.addItem(new SideNavItem("Panel", "panel", VaadinIcon.DASHBOARD.create()));
         nav.addItem(new SideNavItem("Facturas", "facturas", VaadinIcon.FILE.create()));
         nav.addItem(new SideNavItem("Usuario", "usuario", VaadinIcon.USER.create()));

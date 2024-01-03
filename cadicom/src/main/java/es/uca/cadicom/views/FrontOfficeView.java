@@ -20,6 +20,7 @@ import java.awt.*;
 @Route(value = "/cliente", layout = MainView.class)
 public class FrontOfficeView extends Div{
     public FrontOfficeView() {
+
     }
 }
 
