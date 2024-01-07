@@ -3,7 +3,6 @@ package es.uca.cadicom.views;
 import com.vaadin.flow.component.html.NativeLabel;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
-import es.uca.cadicom.views.MainView;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.html.H2;
@@ -18,10 +17,9 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 import com.vaadin.flow.theme.lumo.LumoUtility.Padding;
-import jakarta.annotation.security.RolesAllowed;
 
 @PageTitle("Consumo")
-@Route(value = "consumo", layout = MainView.class)
+@Route(value = "consumo", layout = FrontLayout.class)
 @AnonymousAllowed
 //@RolesAllowed("USER")
 @Uses(Icon.class)

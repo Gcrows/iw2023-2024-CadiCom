@@ -19,12 +19,12 @@ import com.vaadin.flow.spring.security.AuthenticationContext;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import es.uca.cadicom.security.SecurityUtils;
 
-public class MainView extends AppLayout {
+public class FrontLayout extends AppLayout {
 
     private H2 viewTitle;
     private final transient AuthenticationContext authContext;
 
-    public MainView(AuthenticationContext authContext) {
+    public FrontLayout(AuthenticationContext authContext) {
         this.authContext = authContext;
         setPrimarySection(Section.DRAWER);
         addDrawerContent();
