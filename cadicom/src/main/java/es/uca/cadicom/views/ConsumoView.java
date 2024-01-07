@@ -61,14 +61,14 @@ public class ConsumoView extends Composite<VerticalLayout> {
         hlData.setAlignItems(Alignment.CENTER);
         hlData.setJustifyContentMode(JustifyContentMode.START);
         iconData.getElement().setAttribute("icon", "lumo:bar-chart");
-        NativeLabel nlblData = new NativeLabel("100 GB");//
+        NativeLabel nlblData = new NativeLabel("100 GB");// input datos totales
         nlblData.setId("pblblData");
         h2Data.setText("Datos móviles");
         h2Data.setWidth("max-content");
         barData.setValue(0.5); //value barra
         barData.getElement().setAttribute("aria-labelledby", "pblblData");
 
-        Span progressBarLabelValue = new Span("50%"); // texto derecha
+        Span progressBarLabelValue = new Span("50%"); // input texto derecha
         HorizontalLayout progressBarLabel = new HorizontalLayout(nlblData, progressBarLabelValue);
         progressBarLabel.setJustifyContentMode(JustifyContentMode.BETWEEN);
 
@@ -79,7 +79,7 @@ public class ConsumoView extends Composite<VerticalLayout> {
         hlSms.setHeight("min-content");
         hlSms.setAlignItems(Alignment.CENTER);
         hlSms.setJustifyContentMode(JustifyContentMode.START);
-        iconSms.getElement().setAttribute("icon", "lumo:user");
+        iconSms.getElement().setAttribute("icon", "vaadin:comment-ellipsis");
         h2Sms.setText("SMS's");
         h2Sms.setWidth("max-content");
         barSms.setValue(0.5);
